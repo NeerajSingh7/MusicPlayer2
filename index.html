@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Music Player</title>
+  </head>
+  <body>
+
+    
+    <div class="navbar">
+        <h2>Music Player</h2>
+        <input type="text" placeholder="song name.." id="input-data">
+            <button class="search">
+                <i class="fas fa-search"></i>
+            </button>
+        </input>
+
+        <div class="input-results">
+            <!-- <button class="cross-btn">
+                <i class="fas fa-times-circle"></i>
+            </button>
+            <div class="not-found">
+                
+            </div>
+        
+            <div class="found">
+                
+            </div> -->
+        </div>
+    </div>
+    
+
+    <div class="music-container">
+        <div class="music-info">
+            <h4 id="title">Sin</h4>
+            
+        </div>
+
+        <audio src="./songs/Brown Shortie.mp3" id="audio" preload="metadata"></audio>
+
+        <div class="img-container">
+            <img src="" alt="song image" id="cover">
+        </div>
+
+        <div class="progress-container">
+            <div class="progress"></div>
+        </div>
+
+        <div class="time">
+            <div class="start-time">00:00</div>
+            <div class="end-time">02:30</div>
+        </div>
+
+        <div class="navigation">
+            <button id="prev" class="action-btn">
+                <i class="fas fa-backward"></i>
+            </button>
+            <button id="play" class="action-btn action-btn-big">
+                <i class="fas fa-play" ></i>
+            </button>
+            <button id="next" class="action-btn">
+                <i class="fas fa-forward"></i>
+            </button>
+            
+        </div>
+
+        <div class="volume" style="cursor: pointer;">
+            <button id="vol-btn">
+                <i class="fas fa-volume-up" ></i>
+            </button>
+        </div>
+
+        
+
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

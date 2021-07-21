@@ -1,0 +1,193 @@
+*{
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; 
+    background-image: linear-gradient(to right top, #0c3705, #454300, #844200, #c52833, #eb128d);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 70vw;
+    height: 3vh;
+}
+
+.navbar h2{
+    position: absolute;
+    left: 30px;
+}
+
+
+.input-results{
+    position: absolute;
+    height: 10rem;
+    width: 10rem;
+    top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: black;
+    display: none;
+}
+
+
+/* .not-found{
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+} */
+
+
+/* .found{ */
+    /* display: flex;  
+    align-items: center;
+    justify-content: space-around;
+    */
+/* }  */
+
+
+.cross-btn, .play-btn{
+    background-color: black;
+    color: white;
+    border: 0;
+    font-size: 20px;
+}
+
+
+.music-container{
+    height: 80%;
+    width: 40%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 20px 20px 0 red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: black;
+    /* flex-wrap: wrap; */
+}
+
+
+.img-container{
+    height: 190px;
+    width: 190px;
+}
+
+.img-container img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    animation: rotate 3s linear infinite;
+    animation-play-state: paused;
+    border: 5px solid yellow;
+}
+
+
+
+.music-container.play .img-container img{
+    animation-play-state: running;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    color: white;
+}
+
+
+.action-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    border: 0;
+    font-size: 20px;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+} 
+
+
+.action-btn-big{
+    font-size: 30px;
+}
+
+
+.progress-container{
+    height: 8px;
+    width: 100%;
+    background-color: purple;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.progress{
+    height: 100%;
+    width: 0%;
+    background-color: chartreuse;
+    border-radius: inherit;
+    transition: width 0.1s linear;
+}
+
+
+.time{
+    height: 20px;
+    margin-top: -20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+
+
+
+.volume{
+    position: relative;
+    right: -200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#vol-btn{
+    /* border: 0; */
+    font-size: 20px;
+    color: white;
+    background-color: black;
+}
+
+#vol-seek{
+    width: 80px;
+    height: 10px;
+}
+
